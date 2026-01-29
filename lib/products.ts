@@ -1,9 +1,14 @@
+export type ProductType = "direct" | "external";
+
 export type Product = {
   id: number;
+  slug: string; // ✅ add this
   title: string;
   price: string;
   description: string;
-  type: "direct" | "external";
+  type: ProductType;
+
+  // external marketplace support
   link?: string;
   market?: string;
 };
@@ -11,29 +16,26 @@ export type Product = {
 export const products: Product[] = [
   {
     id: 1,
+    slug: "sequence",
     title: "Sequence",
     price: "$19 (Lifetime)",
-    description: "Clipboard sequencing utility for power users. Copy smarter, paste faster.",
+    description: "Clipboard sequencing utility built for speed and zero friction.",
     type: "direct",
-    link: "/products/sequence",
-    market: "Ark & Mile",
   },
   {
     id: 2,
+    slug: "zendeckstop",
     title: "ZenDesktop",
-    price: "Free / Coming Soon",
-    description: "Privacy + workspace cleanup tool. One-click hide, lock down, and reset your workspace.",
-    type: "external",
-    link: "https://gumroad.com",
-    market: "Gumroad",
+    price: "Free",
+    description: "Privacy + workspace cleanup. One click to reset your desktop state.",
+    type: "direct",
   },
   {
     id: 3,
+    slug: "codedeaver",
     title: "CodeDeaver",
-    price: "Internal Tool",
-    description: "Intelligent code vault + snippet injection for C# workflows.",
-    type: "external",
-    link: "https://etsy.com",
-    market: "Etsy",
+    price: "Free (Upgrade available later)",
+    description: "A code vault with fast capture + smart injection. Built for daily use.",
+    type: "direct",
   },
 ];
