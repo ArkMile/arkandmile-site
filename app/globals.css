@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-gunmetal: #2C3539;
+  --color-seagreen: #00E6A8;
+  
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* Force Dark Mode Default */
+body {
+  background-color: var(--color-gunmetal);
+  color: #ffffff;
+}
