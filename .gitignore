@@ -24,3 +24,8 @@ pnpm-debug.log*
 Thumbs.db
 .vscode
 .idea
+
+GMAIL_USER=arkandmile@gmail.com
+GMAIL_APP_PASSWORD= wvre gtua fsal dapx
+REQUEST_TO_EMAIL=arkandmile@gmail.com
+REQUEST_FROM_EMAIL="Ark & Mile Requests" <arkandmile@gmail.com>
